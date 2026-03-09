@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WDD 231: Web Frontend Development I - Home Page</title>
+        <meta
+            name="description"
+            content="Course home page for WDD 231: Web Frontend Development I, showcasing student progress and course information."
+        />
+        <meta name="author" content="Adafa Ralph" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="/styles/styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-brand">
+                <svg
+                    class="logo-svg"
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="45"
+                        stroke="white"
+                        stroke-width="5"
+                        fill="none"
+                    />
+                    <path
+                        d="M30 30 L70 70 M70 30 L30 70"
+                        stroke="white"
+                        stroke-width="8"
+                    />
+                </svg>
+                <span>Adafa Ralph</span>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        </header>
+
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+
+            <div class="content-grid">
+                <section>
+                    <h2>Course Purpose</h2>
+                    <p>
+                        This course focuses on building interactive and
+                        responsive websites using modern HTML, CSS, and
+                        JavaScript. We learn to bridge the gap between static
+                        design and dynamic user experiences.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li>MDN Web Docs</li>
+                        <li>W3Schools</li>
+                        <li>CSS-Tricks</li>
+                    </ul>
+                </section>
+
+                <section class="course-work">
+                    <h2>Certificate Courses</h2>
+                    <div class="filter-buttons">
+                        <button id="all">All</button>
+                        <button id="cse">CSE</button>
+                        <button id="wdd">WDD</button>
+                    </div>
+
+                    <div id="course-container">
+                        <!-- JavaScript will inject courses here -->
+                    </div>
+                    <div class="total-credits" id="credits-summary"></div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://facebook.com" target="_blank">FB</a>
+            </div>
+            <p>
+                &copy; <span id="currentyear"></span> | Your Name | Your
+                Country/State
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+
+        <!-- External JavaScript -->
+        <script src="scripts/script.js" defer></script>
+    </body>
+</html>

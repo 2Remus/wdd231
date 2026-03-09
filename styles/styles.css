@@ -1,0 +1,225 @@
+/* CSS Variables for Consistency */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e67e22;
+    --completed-bg: #d4edda;
+    --incomplete-bg: #f8d7da;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --white: #ffffff;
+}
+
+/* --- BASIC RESET & BASE STYLES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--white);
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    display: block; /* Visible on mobile */
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: none; /* Hidden by default on small screens */
+    flex-direction: column;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+/* Wayfinding */
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+section {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* --- COURSE CARDS SECTION --- */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition:
+        transform 0.2s,
+        background 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+#course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.completed {
+    background-color: var(--completed-bg);
+    border-color: #28a745;
+}
+
+.incomplete {
+    background-color: var(--incomplete-bg);
+    border-color: #dc3545;
+}
+
+.total-credits {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--white);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* --- MEDIA QUERIES (LARGER.CSS) --- */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .course-work {
+        grid-column: 1 / span 2;
+    }
+}
