@@ -3,29 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory | WDD 231</title>
-    <meta name="description" content="Official business directory for the local Chamber of Commerce.">
+    
+    <title>Directory | Chamber of Commerce | WDD 231</title>
+    <meta name="description" content="Official business directory for the local Chamber of Commerce. Discover and connect with local partners.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber Business Directory - WDD 231">
+    <meta property="og:description" content="Explore and connect with local businesses in our comprehensive Chamber of Commerce directory.">
+    <meta property="og:image" content="https://herbydevs.github.io/wdd231/chamber/images/chamber-share.jpg">
+    <meta property="og:url" content="https://herbydevs.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/directory.css">
+    
     <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
-        <nav>
-            <button id="menu" title="Toggle Menu">☰</button>
-            <ul class="navigation">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-            </ul>
-        </nav>
+        <div class="header-brand">
+            <h1 id="chamber-title">Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Open Menu">☰</button>
     </header>
+    
+    <nav>
+        <ul id="primaryNav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <div class="view-controls">
+        <h1>Business Directory</h1>
+        <div class="view-toggle">
             <button id="grid" aria-label="Grid View">Grid View</button>
             <button id="list" aria-label="List View">List View</button>
         </div>
         <article id="members" class="grid-view"></article>
     </main>
+
     <footer>
         <p>&copy; <span id="year"></span> | Adafa Ralph | Rexburg, ID</p>
         <p id="lastModified"></p>
