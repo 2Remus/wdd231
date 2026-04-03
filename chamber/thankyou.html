@@ -1,22 +1,47 @@
-<main>
-    <h1>Thank You for Joining!</h1>
-    <p>Your application has been received. Here is the summary of your submission:</p>
-    <div id="results"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+<header>
+    <h1>Thank You!</h1>
+</header>
+
+<main class="thankyou-container">
+    <section class="info-display">
+        <h2>Application Received</h2>
+        <div id="results">
+        </div>
+        <a href="join.html" class="back-link">Back to Application</a>
+    </section>
 </main>
 
-<script>
-    // Grab URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const resultsContainer = document.getElementById('results');
+<footer>
+    <p>&copy; <span id="current-year"></span> | Chamber of Commerce</p>
+</footer>
 
-    // List of required fields to display
-    const fields = ['firstname', 'lastname', 'email', 'phone', 'organization', 'timestamp'];
-    
-    fields.forEach(field => {
-        if (urlParams.has(field)) {
-            const p = document.createElement('p');
-            p.innerHTML = `<strong>${field.charAt(0).toUpperCase() + field.slice(1)}:</strong> ${urlParams.get(field)}`;
-            resultsContainer.appendChild(p);
-        }
-    });
+<script src="scripts/join.js"></script>
+<script>
+    // Specific logic for thankyou page to display URL params
+    const results = document.querySelector('#results');
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.has('firstname')) {
+        results.innerHTML = `
+                <p><strong>Name:</strong> ${params.get('firstname')} ${params.get('lastname')}</p>
+                <p><strong>Email:</strong> ${params.get('email')}</p>
+                <p><strong>Phone:</strong> ${params.get('phone')}</p>
+                <p><strong>Organization:</strong> ${params.get('organization')}</p>
+                <p><strong>Level:</strong> ${params.get('level').toUpperCase()}</p>
+                <p><strong>Submitted:</strong> ${new Date(params.get('timestamp')).toLocaleString()}</p>
+            `;
+    } else {
+        results.innerHTML = "<p>No application data found.</p>";
+    }
 </script>
+</body>
+</html>

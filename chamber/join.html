@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Chamber of Commerce</title>
     <meta name="description" content="Join the Chamber of Commerce to grow your business with our networking and support programs.">
-    <meta name="author" content="Your Name">
-    
-    <link rel="icon" href="images/favicon.ico"> 
-    
-    <meta property="og:title" content="Join the [Chamber Name] Membership">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://[your-username].github.io/wdd231/chamber/images/share-image.jpg">
-    <meta property="og:url" content="https://[your-username].github.io/wdd231/chamber/join.html">
-    <meta property="og:description" content="Apply now for a membership level that fits your business needs.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
 <body>
-    <header>...</header>
-    <nav>...</nav>
+<header>
+    <h1>Chamber of Commerce</h1>
+</header>
 
-    <main class="join-container">
-        <h1>Chamber Membership Application</h1>
-        
+<main class="join-container">
+    <h1>Membership Application</h1>
+
+    <div class="join-grid">
         <section class="form-section">
             <form method="get" action="thankyou.html">
                 <label>First Name:
-                    <input type="text" name="firstname" required autocomplete="given-name" title="Enter your first name">
+                    <input type="text" name="firstname" required autocomplete="given-name">
                 </label>
 
                 <label>Last Name:
-                    <input type="text" name="lastname" required autocomplete="family-name" title="Enter your last name">
+                    <input type="text" name="lastname" required autocomplete="family-name">
                 </label>
 
                 <label>Organizational Title:
-                    <input type="text" name="title" autocomplete="organization-title" 
-                           pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters, letters, spaces, and hyphens only">
+                    <input type="text" name="title" autocomplete="organization-title"
+                           pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters">
                 </label>
 
                 <label>Email Address:
-                    <input type="email" name="email" required autocomplete="email" 
-                           placeholder="example@domain.com" title="Enter a valid email address">
+                    <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
                 </label>
 
                 <label>Mobile Phone:
-                    <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number">
+                    <input type="tel" name="phone" required autocomplete="tel">
                 </label>
 
-                <label>Business/Organization Name:
-                    <input type="text" name="organization" required autocomplete="organization" title="Enter business name">
+                <label>Business/Organization:
+                    <input type="text" name="organization" required autocomplete="organization">
                 </label>
 
                 <label>Membership Level:
                     <select name="level" required>
                         <option value="" disabled selected>Select a level...</option>
-                        <option value="np">NP Membership (Non-Profit)</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
+                        <option value="np">Non-Profit (NP)</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
                     </select>
                 </label>
 
                 <label>Business Description:
-                    <textarea name="description" title="Briefly describe your business"></textarea>
+                    <textarea name="description"></textarea>
                 </label>
 
                 <input type="hidden" name="timestamp" id="form-timestamp">
-                
-                <input type="submit" value="Join the Chamber">
+                <input type="submit" value="Join the Chamber" class="submit-btn">
             </form>
         </section>
 
@@ -83,17 +81,53 @@
                 <button type="button" onclick="showModal('mod-gold')">Learn More</button>
             </div>
         </section>
-    </main>
+    </div>
+</main>
 
-    <dialog id="mod-np">
-        <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
-        <h2>NP Membership</h2>
-        <p>Specifically for non-profit organizations. $0 fee.</p>
-        <ul>
-            <li>Directory listing</li>
-            <li>Networking event invitations</li>
-        </ul>
-    </dialog>
-    <footer>...</footer>
+<dialog id="mod-np">
+    <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+    <h2>Non-Profit Membership</h2>
+    <p>Specifically for registered 501(c)3 organizations. $0 fee.</p>
+    <ul>
+        <li>Community directory listing</li>
+        <li>Networking event access</li>
+    </ul>
+</dialog>
+
+<dialog id="mod-bronze">
+    <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+    <h2>Bronze Membership</h2>
+    <p>Entry-level membership for small startups.</p>
+    <ul>
+        <li>Directory listing</li>
+        <li>Training workshop discounts</li>
+    </ul>
+</dialog>
+
+<dialog id="mod-silver">
+    <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+    <h2>Silver Membership</h2>
+    <p>Enhanced visibility for growing businesses.</p>
+    <ul>
+        <li>Bronze benefits + Social media spotlights</li>
+        <li>Home page logo placement</li>
+    </ul>
+</dialog>
+
+<dialog id="mod-gold">
+    <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+    <h2>Gold Membership</h2>
+    <p>Premium support for industry leaders.</p>
+    <ul>
+        <li>All benefits + Event sponsorships</li>
+        <li>Monthly strategic consulting</li>
+    </ul>
+</dialog>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> | Chamber of Commerce</p>
+</footer>
+
+<script src="scripts/join.js"></script>
 </body>
 </html>
