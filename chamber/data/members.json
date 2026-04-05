@@ -1,9 +1,60 @@
-[
-  {"name": "Teton Tech", "address": "123 Innovation Way", "phone": "208-555-0101", "website": "https://google.com", "image": "teton.webp", "membership": "Gold"},
-  {"name": "Pathway Coffee", "address": "456 Mocha Dr", "phone": "208-555-0102", "website": "https://google.com", "image": "coffee.webp", "membership": "Silver"},
-  {"name": "Rexburg Creative", "address": "789 Pixel St", "phone": "208-555-0103", "website": "https://google.com", "image": "creative.webp", "membership": "Bronze"},
-  {"name": "Cloud Nine Systems", "address": "101 Sky Lane", "phone": "208-555-0104", "website": "https://google.com", "image": "cloud.webp", "membership": "Gold"},
-  {"name": "Main St. Bakery", "address": "202 Flour Ave", "phone": "208-555-0105", "website": "https://google.com", "image": "bakery.webp", "membership": "Silver"},
-  {"name": "Elite Consulting", "address": "303 Strategy Rd", "phone": "208-555-0106", "website": "https://google.com", "image": "consulting.webp", "membership": "Bronze"},
-  {"name": "Logistics Pro", "address": "404 Cargo Way", "phone": "208-555-0107", "website": "https://google.com", "image": "logistics.webp", "membership": "Gold"}
-]
+{
+  "members": [
+    {
+      "name": "Teton Tech",
+      "address": "123 Innovation Way",
+      "description": "Cutting-edge software development and cloud infrastructure solutions.",
+      "image": "images/teton.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Pathway Coffee",
+      "address": "456 Mocha Dr",
+      "description": "Ethically sourced beans and a quiet space for local students to study.",
+      "image": "images/coffee.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Rexburg Creative",
+      "address": "789 Pixel St",
+      "description": "Graphic design and branding services for small to mid-sized businesses.",
+      "image": "images/creative.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Cloud Nine Systems",
+      "address": "101 Sky Lane",
+      "description": "Reliable data storage and network security for the modern enterprise.",
+      "image": "images/cloud.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Main St. Bakery",
+      "address": "202 Flour Ave",
+      "description": "Traditional sourdough and custom cakes baked fresh every morning.",
+      "image": "images/bakery.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Elite Consulting",
+      "address": "303 Strategy Rd",
+      "description": "Strategic business planning and financial optimization for startups.",
+      "image": "images/consulting.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Logistics Pro",
+      "address": "404 Cargo Way",
+      "description": "Efficient freight forwarding and supply chain management services.",
+      "image": "images/logistics.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Heritage Insurance",
+      "address": "505 Protection Ave",
+      "description": "Comprehensive personal and commercial insurance policies you can trust.",
+      "image": "images/heritage.webp",
+      "membership": "Silver"
+    }
+  ]
+}

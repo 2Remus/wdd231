@@ -1,0 +1,51 @@
+/* Card Container using Named Grid Areas */
+#cards-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Three-column layout for desktop */
+@media (min-width: 900px) {
+    #cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
+    }
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+/* Image Hover Effect (Desktop only) */
+@media (min-width: 600px) {
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card h3 { margin: 10px 0; }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0044cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
