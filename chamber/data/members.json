@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Beacon Marketing Group",
+    "address": "102 North Main St, Suite A",
+    "phone": "(555) 123-4567",
+    "website": "https://example.com/beacon",
+    "image": "beacon-marketing.webp",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Summit Dental Care",
+    "address": "455 East Visual Way",
+    "phone": "(555) 987-6543",
+    "website": "https://example.com/summit-dental",
+    "image": "summit-dental.webp",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Copper Kettle Café",
+    "address": "88 South Broadway",
+    "phone": "(555) 246-8135",
+    "website": "https://example.com/copper-kettle",
+    "image": "copper-kettle.webp",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Vanguard Tech Solutions",
+    "address": "710 Innovation Way",
+    "phone": "(555) 369-1470",
+    "website": "https://example.com/vanguard",
+    "image": "vanguard-tech.webp",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Bluebird Books",
+    "address": "14 West Pine Ave",
+    "phone": "(555) 159-7531",
+    "website": "https://example.com/bluebird",
+    "image": "bluebird-books.webp",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Green Space Landscaping",
+    "address": "1203 Meadow Lane",
+    "phone": "(555) 481-5162",
+    "website": "https://example.com/greenspace",
+    "image": "greenspace-landscaping.webp",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Apex Law Partners",
+    "address": "500 Center Plaza, Floor 4",
+    "phone": "(555) 753-9514",
+    "website": "https://example.com/apexlaw",
+    "image": "apex-law.webp",
+    "membershipLevel": 3
+  }
+]

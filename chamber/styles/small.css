@@ -1,0 +1,158 @@
+/* --- Base Mobile Styles (320px+) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9fafb;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-area h1 {
+    font-size: 1.25rem;
+}
+
+/* Responsive Navigation Engine */
+#menu-toggle {
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    font-size: 1.75rem;
+    color: #ffffff;
+}
+
+#nav-menu {
+    display: none;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#nav-menu li a {
+    display: block;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #2563eb;
+    transition: background 0.2s;
+}
+
+#nav-menu li a.active, #nav-menu li a:hover {
+    background-color: #2563eb;
+}
+
+/* Directory Control View Buttons */
+.directory-controls {
+    text-align: center;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+.toggle-buttons {
+    margin-top: 0.75rem;
+}
+
+.toggle-buttons button {
+    padding: 0.5rem 1.25rem;
+    margin: 0 0.25rem;
+    background-color: #e5e7eb;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.toggle-buttons button.active {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border-color: #1e3a8a;
+}
+
+/* Fallback Card Styles (Applies to both layouts on Mobile) */
+.member-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.member-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin: 0.25rem 0;
+}
+
+.membership-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+}
+
+.lvl-1 { background-color: #e5e7eb; color: #374151; }
+.lvl-2 { background-color: #dbeafe; color: #1e40af; }
+.lvl-3 { background-color: #fef3c7; color: #92400e; }
+
+.member-card .website a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Grid Specific Layout Logic on Mobile */
+.grid-layout .member-card {
+    text-align: center;
+}
+
+.grid-layout .member-card img {
+    margin: 0 auto 1rem auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* List Specific Layout Logic (Hides images globally) */
+.list-layout .member-card img {
+    display: none;
+}
+
+/* Footer Section Rules */
+footer {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+}
+
+.footer-contact {
+    margin-bottom: 1.5rem;
+}
+
+.footer-meta p {
+    margin: 0.4rem 0;
+    color: #9ca3af;
+}
