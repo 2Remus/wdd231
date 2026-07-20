@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Home</title>
+    <meta name="description" content="Chamber of Commerce home page featuring community events, weather updates, and local business spotlights.">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="scripts/chamber.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/chamber-logo.png" alt="Chamber Logo" class="logo">
+            <h1>Community Chamber</h1>
+        </div>
+        <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-container">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 800px)">
+                <img src="images/hero-small.jpg" alt="Beautiful cityscape representing our chamber community" class="hero-image">
+            </picture>
+            <div class="cta-overlay">
+                <h2>Grow Your Business Today</h2>
+                <p>Join our thriving network of local professionals.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+
+        <div class="main-grid">
+            <!-- Current Events Section -->
+            <section class="events-card">
+                <h2>Upcoming Events</h2>
+                <div class="event-item">
+                    <h3>Annual Business Expo</h3>
+                    <p><strong>Date:</strong> August 15, 2026</p>
+                    <p>Connect with over 100 local vendors and accelerate your business connections.</p>
+                </div>
+                <div class="event-item">
+                    <h3>Networking Breakfast</h3>
+                    <p><strong>Date:</strong> September 3, 2026</p>
+                    <p>Start your morning right with fresh coffee and strategic community discussions.</p>
+                </div>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-card">
+                <h2>Local Weather</h2>
+                <div id="weather-current">
+                    <p>Current Temp: <span id="current-temp">--</span>°F</p>
+                    <p>Condition: <span id="weather-desc">--</span></p>
+                </div>
+                <hr>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-container">
+
+                </div>
+            </section>
+        </div>
+
+
+        <section class="spotlight-section">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Community Chamber | Your Name | WDD 231 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
