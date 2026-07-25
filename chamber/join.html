@@ -5,12 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chamber Membership Join | Chamber of Commerce</title>
   <meta name="description" content="Apply to join the Chamber of Commerce and select a membership level.">
+  <meta name="author" content="Your Name Here">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chamber Membership Join | Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Chamber of Commerce and select a membership level.">
+  <meta property="og:image" content="https://2remus.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:url" content="https://2remus.github.io/wdd231/chamber/join.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- JavaScript -->
   <script src="scripts/join.js" defer></script>
 </head>
 <body>
+
   <header>
-    <h1>Chamber of Commerce</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="directory.html">Directory</a>
@@ -19,7 +38,8 @@
   </header>
 
   <main class="join-container">
-    <h2>Membership Application</h2>
+    <!-- Single h1 moved inside main for audit compliance -->
+    <h1>Chamber Membership Join</h1>
 
     <!-- FORM SECTION -->
     <form action="thankyou.html" method="get" class="join-form">
@@ -77,28 +97,28 @@
 
     <!-- CARDS & MODALS SECTION -->
     <section class="membership-cards">
-      <h3>Membership Benefits</h3>
+      <h2>Membership Benefits</h2>
 
       <div class="card card-animate">
-        <h4>NP Membership</h4>
+        <h3>NP Membership</h3>
         <p>For Non-Profit Organizations.</p>
         <button type="button" class="open-modal" data-modal="modal-np">View Benefits</button>
       </div>
 
       <div class="card card-animate">
-        <h4>Bronze Membership</h4>
+        <h3>Bronze Membership</h3>
         <p>Great for small businesses.</p>
         <button type="button" class="open-modal" data-modal="modal-bronze">View Benefits</button>
       </div>
 
       <div class="card card-animate">
-        <h4>Silver Membership</h4>
+        <h3>Silver Membership</h3>
         <p>Expanded advertising & events.</p>
         <button type="button" class="open-modal" data-modal="modal-silver">View Benefits</button>
       </div>
 
       <div class="card card-animate">
-        <h4>Gold Membership</h4>
+        <h3>Gold Membership</h3>
         <p>Maximum exposure & spotlight positioning.</p>
         <button type="button" class="open-modal" data-modal="modal-gold">View Benefits</button>
       </div>
