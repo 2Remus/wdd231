@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Application Submitted</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const output = document.getElementById("submission-info");
+
+      if (output) {
+        output.innerHTML = `
+          <p><strong>First Name:</strong> ${params.get("fname") || "N/A"}</p>
+          <p><strong>Last Name:</strong> ${params.get("lname") || "N/A"}</p>
+          <p><strong>Email:</strong> ${params.get("email") || "N/A"}</p>
+          <p><strong>Phone:</strong> ${params.get("phone") || "N/A"}</p>
+          <p><strong>Business Name:</strong> ${params.get("organization") || "N/A"}</p>
+          <p><strong>Submission Date:</strong> ${params.get("timestamp") ? new Date(params.get("timestamp")).toLocaleString() : "N/A"}</p>
+        `;
+      }
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <h2>Thank You for Joining!</h2>
+    <p>We have received your application. Here are the details you submitted:</p>
+    <div id="submission-info"></div>
+  </main>
+</body>
+</html>
