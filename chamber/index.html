@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Home</title>
+    <title>Community Chamber of Commerce - Home</title>
     <meta name="description" content="Chamber of Commerce home page featuring community events, weather updates, and local business spotlights.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="images/favicon.ico">
+
+
+    <meta property="og:title" content="Community Chamber of Commerce - Home">
+    <meta property="og:description" content="Chamber of Commerce home page featuring community events, weather updates, and local business spotlights.">
+    <meta property="og:image" content="https://2remus.github.io/wdd231/chamber/images/hero-large.jpg">
+    <meta property="og:url" content="https://2remus.github.io/wdd231/chamber/index.html">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
+
     <script defer src="scripts/chamber.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-container">
             <img src="images/chamber-logo.png" alt="Chamber Logo" class="logo">
-            <h1>Community Chamber</h1>
+            <span class="site-title">Community Chamber</span>
         </div>
         <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
         <nav id="navigation">
@@ -26,6 +43,7 @@
     </header>
 
     <main>
+        <h1 class="visually-hidden">Community Chamber of Commerce - Home</h1>
 
         <section class="hero-container">
             <picture>
@@ -39,9 +57,7 @@
             </div>
         </section>
 
-
         <div class="main-grid">
-            <!-- Current Events Section -->
             <section class="events-card">
                 <h2>Upcoming Events</h2>
                 <div class="event-item">
@@ -56,7 +72,7 @@
                 </div>
             </section>
 
-            <!-- Weather Section -->
+
             <section class="weather-card">
                 <h2>Local Weather</h2>
                 <div id="weather-current">
@@ -71,7 +87,6 @@
             </section>
         </div>
 
-
         <section class="spotlight-section">
             <h2>Business Spotlights</h2>
             <div id="spotlight-container" class="spotlight-grid">
@@ -81,7 +96,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Community Chamber | Your Name | WDD 231 Project</p>
+        <p>&copy; 2026 Community Chamber | Adafa Ralph | WDD 231 Project</p>
         <p id="lastModified"></p>
     </footer>
 </body>
