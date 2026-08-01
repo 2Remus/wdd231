@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Central City Park",
+    "address": "123 Park Ave, Cityville, ST 12345",
+    "description": "A beautiful green space featuring scenic walking trails, community events, and relaxing picnic spots.",
+    "photo": "images/park.webp"
+  },
+  {
+    "title": "Historical Museum",
+    "address": "456 Heritage Way, Cityville, ST 12345",
+    "description": "Explore rich local history, interactive cultural exhibits, and artifacts dating back to the town's founding.",
+    "photo": "images/museum.webp"
+  },
+  {
+    "title": "Downtown Market",
+    "address": "789 Main St, Cityville, ST 12345",
+    "description": "Vibrant local market offering fresh regional produce, artisanal goods, handcrafted art, and delicious treats.",
+    "photo": "images/market.webp"
+  },
+  {
+    "title": "City Botanical Garden",
+    "address": "101 Flora Blvd, Cityville, ST 12345",
+    "description": "Stunning greenhouse displays, tranquil water features, and diverse collections of regional and exotic plants.",
+    "photo": "images/gardens.webp"
+  },
+  {
+    "title": "Grand Theater",
+    "address": "202 Performing Arts Way, Cityville, ST 12345",
+    "description": "Historic venue hosting live theater, concerts, musical performances, and community cultural gatherings.",
+    "photo": "images/theater.webp"
+  },
+  {
+    "title": "Riverfront Walkway",
+    "address": "303 River Rd, Cityville, ST 12345",
+    "description": "Scenic waterfront path ideal for jogging, sunset strolls, cycling, and dining at outdoor riverfront cafes.",
+    "photo": "images/riverwalk.webp"
+  },
+  {
+    "title": "Science Center",
+    "address": "404 Innovation Way, Cityville, ST 12345",
+    "description": "Interactive educational exhibits, modern planetarium shows, and hands-on discovery zones for all ages.",
+    "photo": "images/science.webp"
+  },
+  {
+    "title": "Pioneer Harbor",
+    "address": "505 Marina Dr, Cityville, ST 12345",
+    "description": "Picturesque harbour offering boat tours, kayaking opportunities, fresh seafood dining, and sunset views.",
+    "photo": "images/harbor.webp"
+  }
+]
